@@ -1,6 +1,7 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    include 'conexion_bdd.php';
+    include '../conexion_bbdd/conexion_bdd.php';
 
     // Obtener datos del formulario
     $nombre = $_POST['nombre'];
