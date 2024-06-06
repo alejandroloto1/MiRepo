@@ -10,7 +10,7 @@
 <body>
     <div class="container mt-5">
         <h2 class="mb-4">Formulario de Registro</h2>
-        <form>
+        <form action="procesar_formulario.php" method="POST">
             <div class="form-group">
                 <label for="nombre">Nombre</label>
                 <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre">
