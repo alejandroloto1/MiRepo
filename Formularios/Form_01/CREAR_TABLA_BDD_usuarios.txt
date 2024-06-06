@@ -1,0 +1,17 @@
+//crea una tabla llamada usuarios en la base de datos form_01 con los siguientes campos:
+
+id: Un campo de tipo INT que se autoincrementa y se utiliza como clave primaria.
+nombre: Un campo de tipo VARCHAR(255) que almacenará el nombre del usuario.
+email: Un campo de tipo VARCHAR(255) que almacenará la dirección de correo electrónico del usuario.
+password: Un campo de tipo VARCHAR(255) que almacenará la contraseña del usuario (nota: almacenar contraseñas como texto plano no es seguro en un entorno de producción).
+telefono: Un campo de tipo VARCHAR(15) que almacenará el número de teléfono del usuario.
+direccion: Un campo de tipo VARCHAR(255) que almacenará la dirección del usuario.
+
+CREATE TABLE IF NOT EXISTS form_01.usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    direccion VARCHAR(255) NOT NULL
+);
